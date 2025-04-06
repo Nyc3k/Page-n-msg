@@ -72,7 +72,7 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Basic */
+/* MOJE */
 
 .flex-container {
 	display: flex;
@@ -82,12 +82,50 @@ input, select, textarea {
   .image-container {
 	margin-right: 20px;
   }
+
+  .image-container img{
+	width: 100%; /* Obrazek zajmuje 100% szerokości swojego kontenera */
+	height: auto; /* Wysokość dostosowuje się automatycznie, zachowując proporcje */
+	max-width: 800px; 
+  }
   
   
   .text-container {
 	flex: 1; /* Tekst zajmuje pozostałą przestrzeń */
   }
+  .zakres p {
+	text-align: left;
+	color: #000;
+  }
+  #map {
+    height: 400px;
+    width: 100%;
+	background-color: red;
+	}
 
+  @media (max-width: 768px) {
+	.flex-container {
+	  flex-direction: column; /* Układa elementy jeden pod drugim */
+	  align-items: stretch; /* Rozciąga elementy na całą szerokość kontenera */
+	}
+  
+	.image-container {
+	  margin-right: 0; /* Usuwa prawy margines na mniejszych ekranach */
+	  margin-bottom: 15px; /* Dodaje odstęp pod obrazkiem */
+	  max-width: 100%; /* Obrazek zajmuje całą dostępną szerokość */
+	}
+  
+	.image-container img {
+	  width: 100%; /* Upewnia się, że obrazek zajmuje całą szerokość kontenera */
+	}
+  
+	.text-container {
+	  flex: 0; /* Nie pozwalamy tekstowi na "kurczenie się" */
+	}
+  }
+
+
+  /* Basic */
 	html {
 		box-sizing: border-box;
 	}
@@ -2543,7 +2581,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/pic04.jpg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -2587,13 +2625,13 @@ input, select, textarea {
 					margin: 0;
 					padding-left: 0.05em;
 					position: relative;
-					text-transform: uppercase;
+					/* text-transform: uppercase; */
 				}
 
 			#banner .inner p {
 				letter-spacing: 0.1em;
 				margin: 0;
-				text-transform: uppercase;
+				/* text-transform: uppercase; */
 			}
 
 				#banner .inner p a {
