@@ -97,6 +97,9 @@ input, select, textarea {
 	text-align: left;
 	color: #000;
   }
+  .zakres li {
+	text-align: left;
+  }
   #map {
     height: 400px;
     width: 100%;
@@ -150,7 +153,8 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #7c8081;
+		color: #000000;
+		/* color: #7c8081; */
 		font-family: 'Lato', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -177,7 +181,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table, blockquote {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2467,7 +2471,7 @@ input, select, textarea {
 			animation: none;
 			background: transparent;
 			box-shadow: none;
-			color: #fff;
+			color: #ffffff;
 			padding: 2em 2.5em;
 			position: absolute;
 		}
@@ -2480,6 +2484,12 @@ input, select, textarea {
 				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
 					border: solid 1px;
 				}
+		#header img {
+			visibility: hidden;
+		}
+		#header.alt img {
+			visibility: visible;
+		}
 
 /* Dropotron */
 
@@ -2580,17 +2590,30 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/pic04.jpg");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+
+/* 
+		background: hsla(0, 0%, 91%, 1);
+		background: linear-gradient(270deg, hsla(0, 0%, 91%, 1) 0%, hsla(0, 0%, 56%, 1) 100%);
+		background: -moz-linear-gradient(270deg, hsla(0, 0%, 91%, 1) 0%, hsla(0, 0%, 56%, 1) 100%);
+		background: -webkit-linear-gradient(270deg, hsla(0, 0%, 91%, 1) 0%, hsla(0, 0%, 56%, 1) 100%); */
+
+
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		 background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+
+		/* background-repeat: no-repeat, no-repeat, repeat;
+		background-image: url("images/dark-bl.svg"), url("images/dark-br.svg"), url("../../images/gradient.jpg");  */
+		/* background-color: #aca2aa; */
+
+		background-position: bottom left, bottom right, top center;
+		
 		background-size: 25em, 25em, auto, cover;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
 	}
-
+	
 		#banner .inner {
 			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
 			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -2600,12 +2623,13 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.5);
+			background: rgba(32, 25, 25, 0.5);
 			color: #fff;
 			display: inline-block;
 			opacity: 0;
 			padding: 3em;
 			text-align: center;
+			width: 100%;
 		}
 
 			#banner .inner header {
@@ -2680,50 +2704,22 @@ input, select, textarea {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
 		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-size: 25em, 5em, auto, cover;
 		color: #fff;
-		padding: 5em;
+		padding: 1em;
 		text-align: center;
 	}
 
-		#cta header {
-			margin-bottom: 2em;
-		}
-
-/* Footer */
-
-	#footer {
-		background: #E8EEF4;
-		color: #7c8081;
-		padding: 5em 5em 10em 5em;
-		text-align: center;
-	}
-
-		#footer .copyright {
-			font-size: 0.8em;
-			line-height: 1em;
-		}
-
-			#footer .copyright a {
-				color: inherit;
-			}
-
-			#footer .copyright li {
-				display: inline-block;
-				margin-left: 1em;
-				padding-left: 1em;
-				border-left: dotted 1px;
-			}
-
-				#footer .copyright li:first-child {
-					margin: 0;
-					padding: 0;
-					border: 0;
-				}
 
 /* Wide */
+
+.LogoS{
+	height: 10rem;
+	margin-top: -62px;
+}
 
 	@media screen and (max-width: 1680px) {
 
@@ -2731,6 +2727,14 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				font-size: 14pt;
+			}
+
+			.BannerLogo{
+				height: 15rem;
+			}
+			.LogoS{
+				height: 10rem;
+				margin-top: -175px;
 			}
 
 		/* Section/Article */
@@ -2747,6 +2751,15 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		/* Basic */
+
+		.BannerLogo{
+			height: 15rem;
+		}
+
+		.LogoS{
+			height: 10rem;
+			margin-top: -75px;
+		}
 
 			body, input, select, textarea {
 				font-size: 13pt;
@@ -2794,7 +2807,8 @@ input, select, textarea {
 		/* CTA */
 
 			#cta {
-				padding: 4em;
+				padding-top: 2em;
+				padding-bottom: 1em;
 				background-attachment: scroll;
 			}
 
@@ -2809,6 +2823,16 @@ input, select, textarea {
 /* Narrow */
 
 	@media screen and (max-width: 980px) {
+
+		.BannerLogo{
+			height: 12rem;
+		}
+
+		.LogoS{
+			height: 10rem;
+			/* width: 20rem;  */
+			margin-top: -64px;
+		}
 
 		/* Basic */
 
