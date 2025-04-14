@@ -101,12 +101,15 @@ input, select, textarea {
 	text-align: left;
   }
   #map {
-    height: 400px;
-    width: 100%;
-	background-color: red;
+	height: 30rem;
 	}
 
   @media (max-width: 768px) {
+	#map {
+		height: 22rem;
+		width: 22rem;
+	}
+
 	.flex-container {
 	  flex-direction: column; /* Układa elementy jeden pod drugim */
 	  align-items: stretch; /* Rozciąga elementy na całą szerokość kontenera */
@@ -2598,16 +2601,19 @@ input, select, textarea {
 		background: -webkit-linear-gradient(270deg, hsla(0, 0%, 91%, 1) 0%, hsla(0, 0%, 56%, 1) 100%); */
 
 
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		/* background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
 		 background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		 background-size: 25em, 25em, auto, cover; */
 
-		/* background-repeat: no-repeat, no-repeat, repeat;
-		background-image: url("images/dark-bl.svg"), url("images/dark-br.svg"), url("../../images/gradient.jpg");  */
-		/* background-color: #aca2aa; */
+		 background-image: url("../../images/banner.jpg");
+		 background-repeat:  no-repeat;
+		 background-size: cover;
+
+		
 
 		background-position: bottom left, bottom right, top center;
 		
-		background-size: 25em, 25em, auto, cover;
+		
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
@@ -2623,7 +2629,7 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(32, 25, 25, 0.5);
+			background: rgba(32, 25, 25, 0.247);
 			color: #fff;
 			display: inline-block;
 			opacity: 0;
