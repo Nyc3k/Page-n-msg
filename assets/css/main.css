@@ -2605,9 +2605,9 @@ input, select, textarea {
 		 background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		 background-size: 25em, 25em, auto, cover; */
 
-		 background-image: url("../../images/banner.jpg");
-		 background-repeat:  no-repeat;
-		 background-size: cover;
+		 background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/banner.jpg");
+		 background-repeat: no-repeat, no-repeat, no-repeat;
+		 background-size: 25em, 25em, cover;
 
 		
 
@@ -2893,7 +2893,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				background-size: 15em, 15em, auto, cover;
+				background-size: 15em, 15em, cover;
 			}
 
 		/* Main */
@@ -2920,6 +2920,12 @@ input, select, textarea {
 	@media screen and (max-width: 840px) {
 
 		/* Basic */
+
+		.LogoS{
+			height: 7rem;
+			/* width: 20rem;  */
+			margin-top: -40px;
+		}
 
 			html, body {
 				overflow-x: hidden;
@@ -3348,7 +3354,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				background-size: 10em, 10em, auto, cover;
+				background-size: 10em, 10em, cover;
 				padding: 6em 0;
 			}
 
