@@ -2605,7 +2605,7 @@ input, select, textarea {
 		 background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		 background-size: 25em, 25em, auto, cover; */
 
-		 background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/banner.jpg");
+		 background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/image2.jpeg");
 		 background-repeat: no-repeat, no-repeat, no-repeat;
 		 background-size: 25em, 25em, cover;
 
@@ -2709,14 +2709,20 @@ input, select, textarea {
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: top left, top right, top left, bottom center;
+		/* background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/image25.jpeg"); */
+		/* background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg"); */
+		/* background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 5em, auto, cover;
+		background-size: 25em, 5em, auto, cover; */
 		color: #fff;
+		
 		padding: 1em;
 		text-align: center;
+
+		background-image: url("../../images/image25.jpeg");
+		background-size: cover;
+		background-position:bottom center;
+		background-repeat: no-repeat;
 	}
 
 
