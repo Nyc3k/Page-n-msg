@@ -2719,7 +2719,7 @@ input, select, textarea {
 		padding: 1em;
 		text-align: center;
 
-		background-image: url("../../images/image25.jpeg");
+		background-image: url("../../images/image_nebo.jpeg");
 		background-size: cover;
 		background-position:bottom center;
 		background-repeat: no-repeat;
@@ -2911,7 +2911,7 @@ input, select, textarea {
 		/* CTA */
 
 			#cta {
-				background-size: 15em, 15em, auto, cover;
+				background-size: cover;
 				padding: 3em;
 			}
 
@@ -2926,6 +2926,10 @@ input, select, textarea {
 	@media screen and (max-width: 840px) {
 
 		/* Basic */
+
+		.inner{
+			margin-top: -3rem;
+		}
 
 		.LogoS{
 			height: 7rem;
@@ -3237,6 +3241,9 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+		.inner{
+			margin-top: -3rem;
+		}
 
 			body {
 				min-width: 320px;
@@ -3400,7 +3407,7 @@ input, select, textarea {
 		/* CTA */
 
 			#cta {
-				background-size: 10em, 10em, auto, cover;
+				background-size: cover;
 				padding: 3em 1.5em;
 			}
 
